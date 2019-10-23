@@ -22,7 +22,11 @@
               {
                 "name": "REALM",
                 "value": "eu0"
-            },
+              },
+              {
+                "name": "INTERVAL_SECONDS",
+                "value": "10"
+              },
               {
                   "name": "CONFIG_URL",
                   "value": "https://raw.githubusercontent.com/geoffhigginbottom/testing/master/agent.yaml"
