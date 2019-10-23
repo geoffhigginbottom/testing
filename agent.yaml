@@ -3,7 +3,7 @@
 # mounted in at /hostfs and the docker socket mounted in at
 # /var/run/docker.sock.
 signalFxAccessToken: {"#from": "env:ACCESS_TOKEN"}
-signalFxRealm: eu0
+signalFxRealm: {"#from": "env:REALM"}
 ingestUrl: {"#from": "env:INGEST_URL", optional: true}
 apiUrl: {"#from": "env:API_URL", optional: true}
 
