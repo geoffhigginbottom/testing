@@ -1,0 +1,1478 @@
+[ {
+  "marshallScope" : 1
+}, {
+  "marshallId" : 1,
+  "sf_dashboardConfigs" : [ {
+    "configId" : "EHZIFi-AgAA",
+    "dashboardId" : "EHZH-riAgAE",
+    "descriptionOverride" : null,
+    "filtersOverride" : null,
+    "nameOverride" : null
+  }, {
+    "configId" : "EHZIFU9AYAA",
+    "dashboardId" : "EHZH3zeAcAA",
+    "descriptionOverride" : null,
+    "filtersOverride" : null,
+    "nameOverride" : null
+  } ],
+  "sf_dashboards" : [ "EHZH3zeAcAA", "EHZH-riAgAE" ],
+  "sf_description" : "",
+  "sf_page" : "Usage Overview",
+  "sf_type" : "Page"
+}, {
+  "marshallId" : 2,
+  "marshallMemberOf" : [ 1 ],
+  "sf_dashboard" : "MTS & Event Usage",
+  "sf_description" : "",
+  "sf_filterAlias" : {
+    "variables" : [ ]
+  },
+  "sf_isLocked" : false,
+  "sf_maxDelayOverride" : -1,
+  "sf_savedFilters" : {
+    "density" : 0.0,
+    "sources" : null,
+    "time" : {
+      "end" : "Now",
+      "relative" : true,
+      "start" : "-1w"
+    },
+    "variables" : null
+  },
+  "sf_selectedEventOverlays" : [ ],
+  "sf_type" : "Dashboard",
+  "sf_uiModel" : {
+    "version" : 1,
+    "widgets" : [ {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZH-glAYAA",
+        "chartIndex" : 1571651690450,
+        "id" : 0
+      },
+      "row" : 0,
+      "sizeX" : 12,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZH4K7AgAE",
+        "chartIndex" : 1571651578800,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 4,
+      "options" : {
+        "chartId" : "EHZH6rHAYAA",
+        "chartIndex" : 1571651578801,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 8,
+      "options" : {
+        "chartId" : "EHZH4KgAYAA",
+        "chartIndex" : 1571651578803,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZH4PWAcAA",
+        "chartIndex" : 1571651578799,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 8,
+      "options" : {
+        "chartId" : "EHZH9jnAcAA",
+        "chartIndex" : 1571651578804,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 4,
+      "options" : {
+        "chartId" : "EHZH67_AgAA",
+        "chartIndex" : 1571651578798,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 8,
+      "options" : {
+        "chartId" : "EHZH5elAYAA",
+        "chartIndex" : 1571651578806,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 4,
+      "options" : {
+        "chartId" : "EHZH6WhAcAA",
+        "chartIndex" : 1571651578802,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 4,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZH6RKAgAA",
+        "chartIndex" : 1571651578805,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 4,
+      "sizeY" : 1
+    } ]
+  }
+}, {
+  "marshallId" : 3,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "MTS Creation - Trend",
+  "sf_chartIndex" : 1571651578799,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "MTS creation rate (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numMetricTimeSeriesCreated', extrapolation='zero').sum().scale(60).publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "MTS per min",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "MTS Creation Rate",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " MTS/min",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "MTS Creation Rate (-1w)",
+      "label" : "B",
+      "paletteIndex" : null,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "%",
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 2592000000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 4,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "Real-Time MTS Creation Rate",
+  "sf_chartIndex" : 1571651578800,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "Number of metric time series created in last minute",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numMetricTimeSeriesCreated').sum().mean(over='1m').scale(60).publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Created",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " MTS/min",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : null,
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 5,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "ETS Creation Rate - Info",
+  "sf_chartIndex" : 1571651578806,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "Metric(s):\n<code>sf.org.numEventTimeSeriesCreated</code>\n\nNumber of new [event time series](https://docs.signalfx.com/en/latest/concepts/data-model.html#events-and-event-time-series) (ETS) per minute in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 6,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "EPM - Trend",
+  "sf_chartIndex" : 1571651578798,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "EPM received (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numEventsIngested').mean(over='1m').scale(60).sum().publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "EPM",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "EPM Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "DPM",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "EPM Received (-1w)",
+      "label" : "B",
+      "paletteIndex" : null,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : "LineChart",
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 604800000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 7,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "EPM - Info",
+  "sf_chartIndex" : 1571651578802,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "Metric(s):\n<code>sf.org.numEventsIngested</code>\n\nTotal number of [events](https://docs.signalfx.com/en/latest/concepts/data-model.html#events-and-event-time-series) sent to SignalFx for your organization, minus any events that were not processed and stored due to limits exceeded.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 8,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "Real-Time EPM",
+  "sf_chartIndex" : 1571651578801,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "Number of events SignalFx received in last minute",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numEventsIngested').sum().mean(over='1m').scale(60).publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " EPM",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : null,
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 9,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : " ",
+  "sf_chartIndex" : 1571651690450,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "<table width=\"100%\" rules=\"none\">\n<tr>\n<td align=\"left\" bgcolor=\"#0064b7\" height=\"80px\">\n<font size=\"5\" color=\"#ffffff\">MTS & Events Creation and Trend</font>\n</td>\n</tr>\n<tr>\n<td align=\"left\" bgcolor=\"#0091ea\" height=\"40px\">\n<font size=\"3\" color=\"#ffffff\">Metrics about the Metric Time Series (MTS) and Event creation and trend.</font>\n</td>\n</tr>\n</table>",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 10,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "MTS Creation Rate - Info",
+  "sf_chartIndex" : 1571651578805,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "Metric(s):\n<code>sf.org.numMetricTimeSeriesCreated</code>\n\nNumber of new [metric time series](https://docs.signalfx.com/en/latest/concepts/data-model.html#time-series) (MTS) per minute in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 11,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "ETS Creation - Trend",
+  "sf_chartIndex" : 1571651578804,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "ETS creation rate (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numEventTimeSeriesCreated', extrapolation='zero').sum().scale(60).publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "ETS per min",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "ETS Creation Rate",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " MTS/min",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "ETS Creation Rate (-1w)",
+      "label" : "B",
+      "paletteIndex" : null,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "%",
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 604800000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 12,
+  "marshallMemberOf" : [ 2 ],
+  "sf_chart" : "Real-Time ETS Creation Rate",
+  "sf_chartIndex" : 1571651578803,
+  "sf_dashboardId" : "EHZH3zeAcAA",
+  "sf_description" : "Number of event time series created in last minute",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numEventTimeSeriesCreated').sum().mean(over='1m').scale(60).publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Created",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " ETS/min",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : null,
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 13,
+  "marshallMemberOf" : [ 1 ],
+  "sf_dashboard" : "Host Based Model",
+  "sf_description" : "",
+  "sf_filterAlias" : {
+    "variables" : [ ]
+  },
+  "sf_isLocked" : false,
+  "sf_maxDelayOverride" : -1,
+  "sf_savedFilters" : {
+    "density" : 0.0,
+    "sources" : null,
+    "time" : {
+      "end" : "Now",
+      "relative" : true,
+      "start" : "-1w"
+    },
+    "variables" : null
+  },
+  "sf_selectedEventOverlays" : [ ],
+  "sf_type" : "Dashboard",
+  "sf_uiModel" : {
+    "version" : 1,
+    "widgets" : [ {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZIDukAYAA",
+        "chartIndex" : -8079364613891423195,
+        "id" : 0
+      },
+      "row" : 0,
+      "sizeX" : 12,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZICuqAcAA",
+        "chartIndex" : 1571649700767,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 3,
+      "options" : {
+        "chartId" : "EHZIAIzAgAA",
+        "chartIndex" : 1571649748358,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartId" : "EHZIFKcAcAA",
+        "chartIndex" : 1571649783704,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 9,
+      "options" : {
+        "chartId" : "EHZIARXAcAA",
+        "chartIndex" : 1571649806456,
+        "id" : 0
+      },
+      "row" : 1,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZIAAgAYAA",
+        "chartIndex" : 1571649700768,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 3,
+      "options" : {
+        "chartId" : "EHZICDmAYAA",
+        "chartIndex" : 1571649748359,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartId" : "EHZIEOjAgAA",
+        "chartIndex" : 1571649783705,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 9,
+      "options" : {
+        "chartId" : "EHZH-9OAcAE",
+        "chartIndex" : 1571649806457,
+        "id" : 0
+      },
+      "row" : 2,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartId" : "EHZIBj1AgAA",
+        "chartIndex" : 1571649783706,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 3,
+      "options" : {
+        "chartId" : "EHZICABAcAA",
+        "chartIndex" : 1571649748360,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartId" : "EHZIAd9AYAE",
+        "chartIndex" : 1571649700769,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 3,
+      "sizeY" : 1
+    }, {
+      "col" : 9,
+      "options" : {
+        "chartId" : "EHZICNtAgAA",
+        "chartIndex" : 1571649806458,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 3,
+      "sizeY" : 1
+    } ]
+  }
+}, {
+  "marshallId" : 14,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Container Count",
+  "sf_chartIndex" : 1571649748358,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Number of Containers SignalFx has seen in last 10 minutes",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numResourcesMonitored', filter=filter('resourceType', 'container')).mean(over='1m').count().publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " Containers",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : {
+      "range" : 900000,
+      "type" : "relative"
+    },
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 15,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Host Count",
+  "sf_chartIndex" : 1571649700767,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Number of Hosts SignalFx has seen in last 10 minutes",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numResourcesMonitored', filter=filter('resourceType', 'host')).mean(over='1m').publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " Hosts",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : {
+      "range" : 900000,
+      "type" : "relative"
+    },
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 16,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Container - Info",
+  "sf_chartIndex" : 1571649748360,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "The chart above shows Container count.\n\nMetric(s):\n<code>cpu.usage.total</code>\n\nNumber of Containers being monitored in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 17,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Host - Trend",
+  "sf_chartIndex" : 1571649700768,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Host count (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numResourcesMonitored', filter=filter('resourceType', 'host')).mean(over='1m').publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "Hosts",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      }, {
+        "enabled" : true,
+        "property" : "orgId"
+      }, {
+        "enabled" : true,
+        "property" : "resourceType"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Hosts Monitored",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "Hosts",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Hosts Monitored (-1w)",
+      "label" : "B",
+      "paletteIndex" : 3,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : "LineChart",
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 2592000000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 18,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Host - Info",
+  "sf_chartIndex" : 1571649700769,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "The chart above shows Host count.\n\nMetric(s):\n<code>sf.org.numResourcesMonitored</code>\n\nFilter(s):\n<code>resourceType:host</code>\n\nNumber of Hosts being monitored in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 19,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Hi-Res Metrics",
+  "sf_chartIndex" : 1571649806456,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Number of Hi-Res Metrics SignalFx received in last 10 minutes",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numHighResolutionMetrics').mean(over='1m').publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " Hi-Res Metrics",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : {
+      "range" : 900000,
+      "type" : "relative"
+    },
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 20,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Custom Metrics - Trend",
+  "sf_chartIndex" : 1571649783705,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Custom Metrics (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numCustomMetrics').mean(over='1m').publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "Custom Metrics",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      }, {
+        "enabled" : true,
+        "property" : "orgId"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Custom Metrics Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "Custom Metrics",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Custom Metrics Received (-1w)",
+      "label" : "B",
+      "paletteIndex" : 3,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : "LineChart",
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 2592000000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 21,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Containers - Trend",
+  "sf_chartIndex" : 1571649748359,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Container count (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numResourcesMonitored', filter=filter('resourceType', 'container')).mean(over='1m').count().publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "Containers",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      }, {
+        "enabled" : true,
+        "property" : "plugin_instance"
+      }, {
+        "enabled" : true,
+        "property" : "container_hostname"
+      }, {
+        "enabled" : true,
+        "property" : "container_image"
+      }, {
+        "enabled" : true,
+        "property" : "container_name"
+      }, {
+        "enabled" : true,
+        "property" : "plugin"
+      }, {
+        "enabled" : true,
+        "property" : "host"
+      }, {
+        "enabled" : true,
+        "property" : "container_id"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Containers Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "Containers",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Containers Received (-1w)",
+      "label" : "B",
+      "paletteIndex" : 3,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : "LineChart",
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 2592000000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 22,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Hi-Res Metrics - Trend",
+  "sf_chartIndex" : 1571649806457,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Hi-Res Metrics (blue), % week-on-week growth (brown)",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numHighResolutionMetrics').mean(over='1m').publish(label='A')\nB = (A).timeshift('1w').publish(label='B', enable=False)\nC = ((A-B)/B).scale(100).publish(label='C')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "areaChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "axes" : [ {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "Hi-Res Metrics",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    }, {
+      "highWatermark" : null,
+      "highWatermarkLabel" : null,
+      "label" : "WoW Growth (%)",
+      "lowWatermark" : null,
+      "lowWatermarkLabel" : null,
+      "max" : null,
+      "min" : null
+    } ],
+    "axisPrecision" : null,
+    "colorBy" : "Dimension",
+    "defaultPlotType" : "LineChart",
+    "eventPublishLabelOptions" : [ ],
+    "histogramChartOptions" : {
+      "colorThemeIndex" : 16
+    },
+    "includeZero" : false,
+    "legendOptions" : {
+      "fields" : [ {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : true,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "tokenName"
+      }, {
+        "enabled" : true,
+        "property" : "orgId"
+      } ]
+    },
+    "lineChartOptions" : {
+      "showDataMarkers" : false
+    },
+    "onChartLegendOptions" : {
+      "dimensionInLegend" : "sf_metric",
+      "showLegend" : false
+    },
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 0,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Hi-Res Metrics Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : "Hi-Res Metrics",
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Hi-Res Metrics Received (-1w)",
+      "label" : "B",
+      "paletteIndex" : 3,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 0
+    }, {
+      "displayName" : "Week on Week Growth (%)",
+      "label" : "C",
+      "paletteIndex" : 4,
+      "plotType" : "LineChart",
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueUnit" : null,
+      "yAxis" : 1
+    } ],
+    "showEventLines" : false,
+    "stacked" : false,
+    "time" : {
+      "range" : 2592000000,
+      "type" : "relative"
+    },
+    "type" : "TimeSeriesChart",
+    "unitPrefix" : "Metric"
+  }
+}, {
+  "marshallId" : 23,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Custom Metrics - Info",
+  "sf_chartIndex" : 1571649783706,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "The chart above shows Custom Metric count.\n\nMetric(s):\n<code>sf.org.numCustomMetrics</code>\n\nNumber of Custom Metrics being monitored in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 24,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Hi-Res Metrics - Info",
+  "sf_chartIndex" : 1571649806458,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "The chart above shows Hi-Res Metrics count.\n\nMetric(s):\n<code>sf.org.numHighResolutionMetrics</code>\n\nNumber of Hi-Res Metrics being monitored in your organization.",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 25,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : " ",
+  "sf_chartIndex" : -8079364613891423195,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "markdown" : "<table width=\"100%\" rules=\"none\">\n<tr>\n<td align=\"left\" bgcolor=\"#0064b7\" height=\"80px\">\n<font size=\"5\" color=\"#ffffff\">Host Based Model Count</font>\n</td>\n</tr>\n<tr>\n<td align=\"left\" bgcolor=\"#0091ea\" height=\"40px\">\n<font size=\"3\" color=\"#ffffff\">Metrics about the volume and nature of data that SignalFx is processing and storing for you, such as the number of hosts, containers, custom metrics and hi-res metrics in the last 10 minutes.</font>\n</td>\n</tr>\n</table>",
+    "type" : "Text"
+  }
+}, {
+  "marshallId" : 26,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Custom Metrics",
+  "sf_chartIndex" : 1571649783704,
+  "sf_dashboardId" : "EHZH-riAgAE",
+  "sf_description" : "Number of Custom Metrics SignalFx has seen in last 10 minutes",
+  "sf_modelVersion" : 2,
+  "sf_packageSpecifications" : "",
+  "sf_programText" : "A = data('sf.org.numCustomMetrics').mean(over='1m').publish(label='A')",
+  "sf_type" : "Chart",
+  "sf_visualizationOptions" : {
+    "colorBy" : "Dimension",
+    "colorScale" : null,
+    "colorScale2" : null,
+    "maximumPrecision" : 3,
+    "programOptions" : {
+      "disableSampling" : false,
+      "maxDelay" : null,
+      "minimumResolution" : 5000,
+      "timezone" : null
+    },
+    "publishLabelOptions" : [ {
+      "displayName" : "Received",
+      "label" : "A",
+      "paletteIndex" : 1,
+      "plotType" : null,
+      "valuePrefix" : null,
+      "valueSuffix" : " Custom Metrics",
+      "valueUnit" : null,
+      "yAxis" : 0
+    } ],
+    "refreshInterval" : null,
+    "secondaryVisualization" : "None",
+    "showSparkLine" : false,
+    "time" : {
+      "range" : 900000,
+      "type" : "relative"
+    },
+    "timestampHidden" : false,
+    "type" : "SingleValue",
+    "unitPrefix" : "Metric"
+  }
+} ]
